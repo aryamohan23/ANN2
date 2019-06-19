@@ -1,0 +1,24 @@
+{
+    "root": "/home/jovyan/ANN2",
+    "git": {
+        "remote": "https://github.com/aryamohan23/ANN2.git",
+        "commit": "eca18ce45269b908f8c92d8c7304e1708ea94f4e"
+    },
+    "email": null,
+    "startedAt": "2019-06-15T12:02:52.993917",
+    "host": "jupyter-aryamohan23",
+    "username": "jovyan",
+    "os": "Linux-4.14.119+-x86_64-with-debian-buster-sid",
+    "python": "3.7.3",
+    "gpu": "Tesla K80",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "program": "keras_dropout.py",
+    "cuda": "10.1.168",
+    "args": [],
+    "state": "finished",
+    "heartbeatAt": "2019-06-15T12:04:03.446936",
+    "jobType": null,
+    "mode": "run",
+    "exitcode": 0
+}

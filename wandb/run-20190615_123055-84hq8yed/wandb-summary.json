@@ -1,0 +1,129 @@
+{
+    "graph": {
+        "_type": "graph",
+        "format": "keras",
+        "nodes": [
+            {
+                "name": "flatten_1_input",
+                "id": "flatten_1_input",
+                "class_name": "InputLayer",
+                "output_shape": [
+                    null,
+                    28,
+                    28
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "flatten_1",
+                "id": "flatten_1",
+                "class_name": "Flatten",
+                "output_shape": [
+                    null,
+                    784
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dropout_1",
+                "id": "dropout_1",
+                "class_name": "Dropout",
+                "output_shape": [
+                    null,
+                    784
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dense_1",
+                "id": "dense_1",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    150
+                ],
+                "num_parameters": 117750
+            },
+            {
+                "name": "dense_2",
+                "id": "dense_2",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    10
+                ],
+                "num_parameters": 1510
+            }
+        ],
+        "edges": [
+            [
+                "flatten_1_input",
+                "flatten_1"
+            ],
+            [
+                "flatten_1",
+                "dropout_1"
+            ],
+            [
+                "dropout_1",
+                "dense_1"
+            ],
+            [
+                "dense_1",
+                "dense_2"
+            ]
+        ]
+    },
+    "loss": 0.05227118434906006,
+    "val_acc": 0.9808999982833863,
+    "_timestamp": 1560601900.4206796,
+    "examples": {
+        "width": 28,
+        "height": 28,
+        "count": 36,
+        "_type": "images",
+        "captions": [
+            3,
+            0,
+            0,
+            1,
+            7,
+            3,
+            1,
+            9,
+            0,
+            3,
+            9,
+            6,
+            4,
+            0,
+            5,
+            4,
+            3,
+            4,
+            7,
+            6,
+            7,
+            7,
+            7,
+            6,
+            1,
+            7,
+            6,
+            5,
+            6,
+            4,
+            6,
+            0,
+            4,
+            9,
+            5,
+            1
+        ]
+    },
+    "_step": 49,
+    "_runtime": 45.14758515357971,
+    "epoch": 49,
+    "val_loss": 0.061855980116128924,
+    "acc": 0.983233333492279
+}

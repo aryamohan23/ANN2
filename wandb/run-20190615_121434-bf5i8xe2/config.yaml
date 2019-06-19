@@ -1,0 +1,17 @@
+wandb_version: 1
+
+batch_size:
+  desc: null
+  value: 1024
+dropout:
+  desc: null
+  value: 0.4
+epochs:
+  desc: null
+  value: 50
+hidden_nodes:
+  desc: null
+  value: 100
+optimizer:
+  desc: null
+  value: adam

@@ -1,0 +1,143 @@
+{
+    "graph": {
+        "_type": "graph",
+        "format": "keras",
+        "nodes": [
+            {
+                "name": "flatten_1_input",
+                "id": "flatten_1_input",
+                "class_name": "InputLayer",
+                "output_shape": [
+                    null,
+                    28,
+                    28
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "flatten_1",
+                "id": "flatten_1",
+                "class_name": "Flatten",
+                "output_shape": [
+                    null,
+                    784
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dropout_1",
+                "id": "dropout_1",
+                "class_name": "Dropout",
+                "output_shape": [
+                    null,
+                    784
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dense_1",
+                "id": "dense_1",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    100
+                ],
+                "num_parameters": 78500
+            },
+            {
+                "name": "dropout_2",
+                "id": "dropout_2",
+                "class_name": "Dropout",
+                "output_shape": [
+                    null,
+                    100
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dense_2",
+                "id": "dense_2",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    10
+                ],
+                "num_parameters": 1010
+            }
+        ],
+        "edges": [
+            [
+                "flatten_1_input",
+                "flatten_1"
+            ],
+            [
+                "flatten_1",
+                "dropout_1"
+            ],
+            [
+                "dropout_1",
+                "dense_1"
+            ],
+            [
+                "dense_1",
+                "dropout_2"
+            ],
+            [
+                "dropout_2",
+                "dense_2"
+            ]
+        ]
+    },
+    "val_loss": 0.08687973427772522,
+    "_timestamp": 1560600456.7940884,
+    "_step": 49,
+    "epoch": 49,
+    "examples": {
+        "width": 28,
+        "height": 28,
+        "count": 36,
+        "_type": "images",
+        "captions": [
+            0,
+            2,
+            7,
+            8,
+            0,
+            7,
+            6,
+            3,
+            4,
+            3,
+            0,
+            2,
+            0,
+            3,
+            7,
+            7,
+            3,
+            0,
+            4,
+            4,
+            9,
+            7,
+            5,
+            8,
+            9,
+            3,
+            8,
+            8,
+            3,
+            4,
+            6,
+            0,
+            6,
+            6,
+            4,
+            3
+        ]
+    },
+    "acc": 0.9455999998728434,
+    "loss": 0.1763283420085907,
+    "_runtime": 42.43915057182312,
+    "val_acc": 0.9738999988555909
+}
